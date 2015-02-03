@@ -1,6 +1,7 @@
 
 function Point(x, y) {
     'use strict';
+    
     this.x = x;
     this.y = y;
 
@@ -13,6 +14,7 @@ function Point(x, y) {
 
 function Square(pointA, pointB) {
     'use strict';
+
     this.point1 = pointA;
     this.point2 = pointB;
     
@@ -36,6 +38,7 @@ function Square(pointA, pointB) {
 
 function System() {
     'use strict';
+
     this.squares = [];
     this.deleting = false;
     this.firstPoint = undefined;
@@ -68,8 +71,10 @@ function System() {
     };
 
     this.refresh = function(e) {
+
         system.clearCanvas();
         var square;
+
         for (var i = 0; i < system.squares.length; i++) {
             square = system.squares[i];
             system.redrawSquare(square);
@@ -83,6 +88,7 @@ function System() {
     this.setupListeners = function () {
 
         document.getElementById('addremove').addEventListener('click', function() {
+
             system.deleting = system.deleting? false : true;
             this.innerHTML = system.deleting? "Add" : "Delete";
         });
@@ -95,11 +101,14 @@ function System() {
           });
 
         document.getElementById('changecolour').addEventListener('click', function(e) {
+
             var letters = '0123456789ABCDEF'.split('');
             var colour = '#';
+
             for (var i = 0; i < 6; i++ ) {
                 colour += letters[Math.floor(Math.random() * 16)];
             }
+
             var c = document.getElementById("canvas");
             var ctx = c.getContext("2d");
             ctx.fillStyle = colour;
