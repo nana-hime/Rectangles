@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> Rectangles </title>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="squares.css">
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="wrapper">
+  <div class="topbar central"> Rectangles </div>
+  <div class="main">
+    <div class="left" id="first">
+     <div class="menu">
+        <div class="tools left">
+          <button class="bigger" id="clear">Clear</button>
+          <button class="bigger" id="addremove">Delete</button>
+          <button class="bigger" id="changecolour">Change Colour</button>
+        </div>
+        <div class="status"></div>
+      </div> 
+      <div id="canvaswrap">
+        <canvas id="canvas" width="2000" height="2000">
+        </canvas>
+      </div>
+    </div>
+    <div class="description">
+      <p>
+        <h2>Try this out!</h2>
+        Welcome to Rectangles - a simple tool for drawing rectangles. To draw a rectangle, click on 
+        the canvas and drag, extending it. When you're satisfied with the shape, simply let go.
+        If two rectangles intersect - we'll let you know!
+        <br><br>To delete a rectangle, click on the <b>Delete</b> button to enter the delete mode, 
+        then click on the figure you want to remove. Once you're satisfied with the current state 
+        of your canvas and want to go back to adding shapes - press <b>Add</b>.
+        <br><br>If you want to start from scratch, simply click on <b>Clear</b> to reset the canvas.
+        <br><br>Bored of the classy black? Click on the <b>Change colour</b> button to change it to 
+        something lighter!
+        <h3>Enjoy!</h3>
+      </p>
+    </div>
+  </div>
+  <footer class="central">© Paulina Koch, 2015</footer>
+</div>
+<script type="text/javascript" src="squares.js"></script>
+</body>
+</html>

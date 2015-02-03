@@ -1,0 +1,2 @@
+Design and implement a web page that allows you to draw rectangles on the screen and alerts you whenever a rectangle intersects another.
+Please write this from scratch without using any external libraries. Submit one packaged file that contains all the necessary files and instructions.
